@@ -4,7 +4,7 @@ import Uncle from '../Uncle/Uncle';
 import Aunty from '../Aunty/Aunty';
 
 const GrandFather = (props) => {
-    const{house}=props
+    const{house,ornaments}=props
     return (
         <div>
             <h1>Grand Father</h1>
@@ -12,7 +12,7 @@ const GrandFather = (props) => {
     
         <div style={{display:'flex'}}>
     
-             <Father house={house}></Father>
+             <Father house={house} ornaments={ornaments}></Father>
              <Uncle house={house}></Uncle>
              <Aunty house={house}></Aunty>
 

@@ -4,7 +4,7 @@ import Sister from '../Sister/Sister'
 import Myself from '../Myself/Myself'
 
 const Father = (props) => {
-    const {house}=props
+    const {house,ornaments}=props
     return (
         <div>
             <h1>Father</h1>
@@ -12,7 +12,7 @@ const Father = (props) => {
 
             <div style={{display:'flex'}}>
                 <Brother house={house}></Brother>
-                <Myself  house={house}></Myself>
+                <Myself  house={house} ornaments={ornaments}></Myself>
                 <Sister  house={house}></Sister>
             </div>
         </div>
